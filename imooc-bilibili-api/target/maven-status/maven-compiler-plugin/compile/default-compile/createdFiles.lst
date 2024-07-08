@@ -1,10 +1,11 @@
+com\imooc\bilibili\UserApi.class
+com\imooc\bilibili\FileApi.class
 com\imooc\bilibili\aspect\ApiLimitedRoleAspect.class
 com\imooc\bilibili\DemoApi.class
-com\imooc\bilibili\UserApi.class
 com\imooc\bilibili\support\UserSupport.class
 com\imooc\bilibili\UserMomentApi.class
 com\imooc\bilibili\UserFollowingApi.class
 com\imooc\imoocBilibiliApp.class
-com\imooc\bilibili\FileApi.class
 com\imooc\bilibili\UserAuthApi.class
+com\imooc\bilibili\SystemApi.class
 com\imooc\bilibili\VideoApi.class

@@ -64,5 +64,5 @@ public interface VideoDao {
 
     List<UserPreference> getAllUserPreference();
 
-    List<Video> batchGetVideoByIds(List<Long> itemIds);
+    List<Video> batchGetVideoByIds(@Param("idList") List<Long> idList);
 }

@@ -1,4 +1,5 @@
 D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibili\dao\UserCoinDao.java
+D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibili\domain\UserPreference.java
 D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibili\domain\auth\AuthRole.java
 D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibili\domain\auth\AuthMenu.java
 D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibili\dao\DemoDao.java
@@ -15,6 +16,7 @@ D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibi
 D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibili\domain\Video.java
 D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibili\domain\VideoLike.java
 D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibili\domain\PageResult.java
+D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibili\domain\VideoView.java
 D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibili\dao\FollowingGroupDao.java
 D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibili\domain\constant\UserConstant.java
 D:\Develop\code\imooc-bilibili\imooc-bilibili-dao\src\main\java\com\imooc\bilibili\dao\UserMomentDao.java

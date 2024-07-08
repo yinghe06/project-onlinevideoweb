@@ -217,21 +217,45 @@
         where videoId = #{videoId}
     </select>
     <insert id="addVideoView" parameterType="com.imooc.bilibili.domain.VideoView">
-        insert into
-            t_video_view(
-            videoId,
-            userId,
-            clientId,
-            ip,
-            createTime
-        )values(
-                   #{videoId},
-                   #{userId},
-                   #{clientId},
-                   #{ip},
-                   #{createTime}
-               )
+        insert into t_video_view(videoId,
+                                 userId,
+                                 clientId,
+                                 ip,
+                                 createTime)
+        values (#{videoId},
+                #{userId},
+                #{clientId},
+                #{ip},
+                #{createTime})
     </insert>
+    <select id="getAllUserPreference" resultType="com.imooc.bilibili.domain.UserPreference">
+        SELECT
+            userId,
+            videoId,
+            SUM(CASE operationType
+                    WHEN 'collection' THEN 6
+                    WHEN 'coin' THEN 2
+                    WHEN 'like' THEN 2
+                    ELSE 0
+                END) AS `value`
+        FROM
+            t_video_operation
+        GROUP BY
+            userId, videoId
+    </select>
+
+    <select id="batchGetVideoByIds" resultType="com.imooc.bilibili.domain.Video" >
+        SELECT
+        *
+        FROM
+        t_video
+        WHERE
+        id IN
+        <foreach collection="idList" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </select>
+
 
 </mapper>
 
